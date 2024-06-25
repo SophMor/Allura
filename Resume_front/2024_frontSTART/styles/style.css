@@ -1,0 +1,201 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+}
+/*property to help */
+@media(max-width: 1200px){
+    .header{
+        padding: 10% ;
+    }
+    .starting-point{
+        flex-direction: column-reverse;
+        padding: 5%;
+    }
+    .header__menu{
+        justify-content: center;
+    }
+    .starting-point__content{
+        width: auto; /*adapts to father element*/
+    }
+      .footer {
+        width: 100%;
+        font-size: 14px;
+    }
+    }
+/*Variables*/
+:root{
+    --primary-color: #ffebd2
+    ;
+   
+    --secundary-color:#e49042;
+    --ternary-color:#252525;
+
+    --monserrat-font:"Montserrat", sans-serif;
+    --josefin-font:   "Josefin Sans", sans-serif;
+
+}
+.header{
+    padding: 2% 0% 0% 10%;
+}
+/*Rem 6p = 1rem*/
+.header__menu{display: flex;
+gap: 80px;}
+.header__menu-link{
+    font-family: var(--monserrat-font);
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: var(--secundary-color);
+    text-decoration: none;
+
+}
+.header__aboutme-link{
+    font-family: var(--monserrat-font);
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: var(--secundary-color);
+    text-decoration: none;
+
+}
+body {
+    background-color: var(--primary-color);
+    color: var(--ternary-color);
+    box-sizing: border-box;    
+}
+.starting-point {
+    display: flex;
+    align-items: center;
+    padding: 6% 5.5%;
+    justify-content: space-between;
+    gap: 82px;
+}
+
+
+.starting-point_image {
+    width: 50%;
+    margin-right: 30px; /* Ajusta el valor según sea necesario */
+}
+.title-highlight {
+    color: var(--secundary-color);
+}
+.starting-point__title-blog {
+    font-family: var(--josefin-font);
+    font-size: 2.81rem;
+}
+.starting-point__texto-destacado {
+    font-family: 
+    var(--monserrat-font);
+    font-size: 1.5rem;
+}
+.starting-point__image-buttons {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.starting-point__links {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
+    gap: 32px;
+    width: 50%;
+}
+.starting-point__link-text{
+    font-family:var(--monserrat-font);
+    font-size: 1.5rem;
+    font-weight: 400;
+}
+.starting-point__content {
+        padding: 60px;
+        width: 50%;
+    }
+
+.button{
+   height: 50px;
+    width: 50%;
+    position: relative;
+    background-color: transparent;
+    cursor: pointer;
+    border: 2px solid #252525;
+    overflow: hidden;
+    border-radius: 30px;
+    color: #333;
+    transition: all 0.5s ease-in-out;
+    font-weight: 800;
+    letter-spacing: 4px;
+    text-decoration: none;
+}
+.btn-txt {
+    z-index: 1;
+    color: inherit;
+    text-decoration: inherit;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+
+.type1::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    transition: all 0.5s ease-in-out;
+    background-color: var(--secundary-color);
+    border-radius: 30px;
+    visibility: hidden;
+    height: 100%;
+    width: 0;
+    z-index: -1;
+}
+.button:hover {
+    box-shadow: 1px 1px 200px #252525;
+    color: #fff;
+    border: none;
+}
+.type1:hover::after {
+    visibility: visible;
+    width: 100%;
+}
+
+.footer{
+    background-color: var(--secundary-color);
+    padding: 23.6px;
+    color: #000600;
+    text-align: center;
+    font-family: var(--monserrat-font);
+
+}
+.arrow-list {
+    list-style-type: none;
+    padding: 0;
+
+    font-family: var(--monserrat-font);
+}
+
+.arrow-list li {
+    position: relative;
+    padding-left: 20px;
+    margin-bottom: 10px;
+}
+
+.arrow-list li::before {
+    content: '►';
+    position: absolute;
+    left: 0;
+    color: var(--secundary-color);
+    border-width: -1em;
+}
+.skills-list{
+    font-family:var(--monserrat-font);
+    list-style-type: none;
+    padding: 0;
+}
+.skills-list li{
+    transition: var(--secundary-color) 0.2s ease;
+}
+
+.skills-list :hover{
+    background-color:var(--secundary-color);
+}
+

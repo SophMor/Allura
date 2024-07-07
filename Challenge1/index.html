@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Index</title>
+    <link rel="stylesheet" href="./styles/style.css">
+</head>
+<body>
+    <header class="header"><img src="./img/Vector.png" alt="a"></header>
+    <main class="content">
+        <section class="content_section">
+            <input type="text" name="textoEncriptar" placeholder="Ingrese su texto aquí" id="textoEncriptar" class="content_section_text">
+        </section>
+        <section class="content_section2" id="contentSection2">
+            <img src="./img/Muñeco.png" alt="Figure of a man with a glass" id="image">
+
+            <h2 class="content_section2__title" id="title2"></h2>
+            <p class="texto1" id="textoEncriptado"></p>
+            <button class="content_section2__button_copy" onclick="copyText()">Copy</button>
+        </section>
+    </main>
+    <footer class="footer">
+        <p class="texto1">No se aceptarán mayúsculas ni caracteres especiales.</p>
+        <button onclick="validate(document.getElementById('textoEncriptar').value, 'encriptar')" class="footer_button_encript" id="encriptar">Encriptar</button>
+        <button onclick="validate(document.getElementById('textoEncriptar').value, 'desencriptar')" class="footer_button_decription" id="desencriptar">Desencriptar</button>
+        <p class="texto1">¡Sofia Morales 2024!</p>
+
+    </footer>
+    <script src="app.js"></script>
+</body>
+</html>

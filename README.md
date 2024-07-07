@@ -1,15 +1,15 @@
-# Portfolio ¡Hello welcome to my portfolio projects!
+# Portfolio: ¡Hola, bienvenido a mis proyectos!
 
-## Herramientas utilizadas:
+## Herramientas Utilizadas:
 
-* HTML
+- HTML
+- CSS
+- JavaScript
 
-* CSS
+## Proyectos Principales:
 
-* Javascript
-  ##Main links:
-*challenge-1-encript-145dov99p-sofias-projects-22782758.vercel.app
+- **Challenge 1 - Encriptar y desencriptar**: [Ver Proyecto](https://sofias-projects-22782758.vercel.app)
 
-## Made by:
+## Desarrollado por:
 
-###Sofia Morales
+### Sofía Morales
